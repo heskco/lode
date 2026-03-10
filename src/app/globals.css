@@ -3,10 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --lode-blue: #1E40AF;
-  --lode-lightblue: #3B82F6;
+  --lode-navy: #0B1F3B;
+  --lode-orange: #FF6A00;
+  --lode-slate: #94A3B8;
+  --lode-light-bg: #F5F7FA;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+  background-color: var(--lode-light-bg);
 }
