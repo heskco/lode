@@ -57,15 +57,13 @@ export default function Home() {
             {/* Left Column - Text Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold text-lode-navy mb-6 leading-tight">
-                Transform Travel Data
+                AI-POWERED TRAVEL ANALYTICS
                 <br />
-                Into{' '}
-                <span className="text-lode-orange">Actionable Intelligence</span>
+                <span className="text-lode-orange">Stop drowning in spreadsheets. Start making decisions.</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-lode-slate mb-12 leading-relaxed">
-                Enterprise travel analytics powered by AI. Query your data in natural language,
-                enforce policy compliance, and unlock insights that drive better decisions.
+                Every hour you spend building reports is an hour that policy violations go unnoticed and money goes down the drain. LODE turns your scattered travel data into clear, instant answers — so nothing gets missed again.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -76,26 +74,26 @@ export default function Home() {
                   Start 14-Day Free Trial
                 </a>
                 <a
-                  href="https://app.go-lode.com/login"
-                  className="px-8 py-4 bg-white text-lode-navy font-semibold rounded-lode hover:bg-gray-50 transition-all border-2 border-lode-navy text-lg"
+              href="mailto:info@go-lode.com?subject=Demo%20Request"
+              className="px-8 py-4 bg-lode-orange text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-md hover:shadow-lg text-lg"
                 >
-                  Sign In
-                </a>
+              Request a demo
+            </a>
               </div>
 
               {/* Hero Feature Pills */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-3">
                 <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
-                  ✓ GDPR Compliant
+                  ✓ Data never leaves your browser
                 </div>
                 <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
-                  ✓ AI-Powered Queries
+                  ✓ Up and running in minutes
                 </div>
                 <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
-                  ✓ Real-Time Analytics
+                  ✓ No technical skills needed
                 </div>
                 <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
-                  ✓ Multi-Tenant Security
+                  ✓ Works across all your data sources
                 </div>
               </div>
             </div>
@@ -105,7 +103,7 @@ export default function Home() {
               <div className="bg-white rounded-lode shadow-2xl border border-gray-200 p-2 overflow-hidden">
                 <img
                   src="/product-dashboard.png"
-                  alt="Lode Dashboard - Privacy-First AI-Powered Travel Analytics showing data lakes, AI queries, and file management"
+                  alt="LODE Dashboard - Privacy-First AI-Powered Travel Analytics showing data lakes, AI queries, and file management"
                   className="rounded-lode w-full h-auto"
                 />
               </div>
@@ -118,54 +116,54 @@ export default function Home() {
       </section>
 
       {/* Pain Point Hook Section */}
-      <section className="container mx-auto px-6 py-16 bg-white">
+      <section className="px-6 py-16" style={{ backgroundColor: '#F5F7FA' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-lode-navy mb-4">
-              Travel Data Shouldn't Be This Hard
+              Sound familiar?
             </h2>
             <p className="text-xl text-lode-slate max-w-2xl mx-auto">
-              If you're still wrestling with spreadsheets and outdated reports, you're not alone.
+              Whether you manage travel for one company or one hundred, the story is the same. Month after month, the same slow, manual grind.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {/* Pain Point 1 */}
-            <div className="relative p-6 bg-gradient-to-br from-red-50 to-white border-l-4 border-red-400 rounded-lode shadow-sm">
+            <div className="relative p-6 bg-white border-l-4 border-lode-orange rounded-lode shadow-sm">
               <div className="flex items-start mb-3">
-                <div className="w-10 h-10 bg-red-100 rounded-lode flex items-center justify-center mr-3 flex-shrink-0">
-                  <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 rounded-lode flex items-center justify-center mr-3 flex-shrink-0" style={{ backgroundColor: '#FFF0E6' }}>
+                  <svg className="w-6 h-6 text-lode-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-lode-navy">Hours Wasted Every Week</h3>
+                <h3 className="text-lg font-bold text-lode-navy">You're buried in spreadsheets</h3>
               </div>
               <p className="text-lode-slate">
-                Your team spends days building manual reports instead of analyzing insights and making strategic decisions.
+                Hours every month copy-pasting data from booking tools, credit cards, and expense systems — just to build a basic report that's already out of date.
               </p>
             </div>
 
             {/* Pain Point 2 */}
-            <div className="relative p-6 bg-gradient-to-br from-red-50 to-white border-l-4 border-red-400 rounded-lode shadow-sm">
+            <div className="relative p-6 bg-white border-l-4 border-lode-orange rounded-lode shadow-sm">
               <div className="flex items-start mb-3">
-                <div className="w-10 h-10 bg-red-100 rounded-lode flex items-center justify-center mr-3 flex-shrink-0">
-                  <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 rounded-lode flex items-center justify-center mr-3 flex-shrink-0" style={{ backgroundColor: '#FFF0E6' }}>
+                  <svg className="w-6 h-6 text-lode-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-lode-navy">Savings Lost in the Noise</h3>
+                <h3 className="text-lg font-bold text-lode-navy">Savings are hiding in plain sight</h3>
               </div>
               <p className="text-lode-slate">
-                Policy violations and cost-saving opportunities are buried in thousands of rows. By the time you find them, it's too late.
+                Missed early-booking discounts. Hotels above the rate cap. Suppliers you've overpaid for years. The answers are in your data — but finding them feels impossible.
               </p>
             </div>
 
             {/* Pain Point 3 */}
-            <div className="relative p-6 bg-gradient-to-br from-red-50 to-white border-l-4 border-red-400 rounded-lode shadow-sm">
+            <div className="relative p-6 bg-white border-l-4 border-lode-orange rounded-lode shadow-sm">
               <div className="flex items-start mb-3">
-                <div className="w-10 h-10 bg-red-100 rounded-lode flex items-center justify-center mr-3 flex-shrink-0">
-                  <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <div className="w-10 h-10 rounded-lode flex items-center justify-center mr-3 flex-shrink-0" style={{ backgroundColor: '#FFF0E6' }}>
+                  <svg className="w-6 h-6 text-lode-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7h16M4 12h16M4 17h10" />
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-lode-navy">Data Scattered Everywhere</h3>
@@ -174,16 +172,31 @@ export default function Home() {
                 Travel data lives in multiple systems. Getting a complete picture means endless exports, merges, and pivot tables.
               </p>
             </div>
+
+            {/* Pain Point 4 */}
+            <div className="relative p-6 bg-white border-l-4 border-lode-orange rounded-lode shadow-sm">
+              <div className="flex items-start mb-3">
+                <div className="w-10 h-10 rounded-lode flex items-center justify-center mr-3 flex-shrink-0" style={{ backgroundColor: '#FFF0E6' }}>
+                  <svg className="w-6 h-6 text-lode-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-lode-navy">Enterprise tools are out of reach</h3>
+              </div>
+              <p className="text-lode-slate">
+                Tableau and Power BI either cost a fortune, need a data engineer to set up, or require uploading sensitive employee data to the cloud.
+              </p>
+            </div>
           </div>
 
           {/* Transition Statement */}
           <div className="mt-12 text-center">
-            <div className="inline-block p-6 bg-lode-light-bg rounded-lode border-2 border-lode-orange">
-              <p className="text-xl font-semibold text-lode-navy mb-2">
-                There's a better way.
+            <div className="inline-block p-6 bg-lode-navy rounded-lode">
+              <p className="text-xl font-semibold text-lode-orange mb-2">
+                There's a better way to work.
               </p>
-              <p className="text-lode-slate">
-                Lode brings all your travel data together and makes it instantly queryable—in plain English.
+              <p className="text-white">
+                LODE brings all your data together for enterprise-grade analytics — without the enterprise cost, complexity, or privacy risk.
               </p>
             </div>
           </div>
@@ -283,7 +296,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-lode-navy mb-3">Custom Dashboards</h3>
               <p className="text-lode-slate leading-relaxed">
                 Build and share custom dashboards tailored to your needs. Track KPIs,
-                benchmark performance, and visualize trends with interactive charts.
+                benchmark performance, and visualise trends with interactive charts.
               </p>
             </div>
           </div>
@@ -295,11 +308,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-lode-navy mb-4">
-              Built for Your Business Model
+              Built for corporate travel teams, TMCs, and resellers
             </h2>
-            <p className="text-xl text-lode-slate max-w-2xl mx-auto">
-              Whether you're a TMC, reseller, or corporate travel manager, Lode adapts to your needs.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -314,7 +324,7 @@ export default function Home() {
                 Travel Management Companies
               </h3>
               <p className="text-lode-slate mb-6">
-                Aggregate analytics across all your clients. Perfect for multi-client reporting and benchmarking.
+                Merge analytics across all your clients. Perfect for multi-client reporting and benchmarking.
               </p>
               <ul className="space-y-3 text-lode-navy">
                 <li className="flex items-start">
@@ -396,7 +406,7 @@ export default function Home() {
                 Corporate Travel Managers
               </h3>
               <p className="text-lode-slate mb-6">
-                Take control of your travel program with deep insights into policy, costs, and traveler behavior.
+                Take control of your travel programme with deep insights into policy, costs, and traveller behaviour.
               </p>
               <ul className="space-y-3 text-lode-navy">
                 <li className="flex items-start">
@@ -415,7 +425,7 @@ export default function Home() {
                   <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Traveler behavior insights and patterns</span>
+                  <span>Traveller behaviour insights and patterns</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -511,7 +521,7 @@ export default function Home() {
                   €499
                   <span className="text-lg font-normal text-lode-slate">/month</span>
                 </div>
-                <p className="text-lode-slate">For corporate travel programs</p>
+                <p className="text-lode-slate">For corporate travel programmes</p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start text-lode-navy">
@@ -613,44 +623,43 @@ export default function Home() {
 
           {/* Enterprise Note */}
           <div className="mt-8 p-6 bg-lode-navy rounded-lode text-center">
-            <h4 className="text-2xl font-bold text-white mb-3">Enterprise Solutions</h4>
+            <h4 className="text-2xl font-bold text-white mb-3">Need custom volume pricing, specific data integrations, or 24/7 support?</h4>
             <p className="text-gray-300 mb-4">
-              Need custom volume pricing, on-premise deployment, or 24/7 premium support?
-              We offer tailored solutions for large organizations with advanced requirements.
+              We offer tailored solutions for organisations with advanced requirements.
             </p>
             <a
               href="mailto:info@go-lode.com?subject=Enterprise%20Inquiry"
               className="inline-block px-8 py-3 bg-lode-orange text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-md hover:shadow-lg"
             >
-              Contact Enterprise Sales
+              Talk to our enterprise team
             </a>
           </div>
         </div>
       </section>
 
-      {/* Social Proof / Trust Section */}
-      <section className="container mx-auto px-6 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lode-slate text-lg mb-8">
-            Trusted by travel professionals worldwide
+      {/* Final CTA Section */}
+      <section className="container mx-auto px-6 py-20">
+        <div className="max-w-4xl mx-auto bg-lode-navy rounded-lode p-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Your first insight is only one LODE away...
+          </h2>
+          <p className="text-xl text-gray-300 mb-8">
+            No credit card. No setup. No waiting. Just answers.
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 text-lode-navy">
-            <div className="px-6 py-3 bg-white rounded-lode border border-gray-200">
-              <div className="text-3xl font-bold text-lode-orange">GDPR</div>
-              <div className="text-sm text-lode-slate">Compliant</div>
-            </div>
-            <div className="px-6 py-3 bg-white rounded-lode border border-gray-200">
-              <div className="text-3xl font-bold text-lode-orange">256-bit</div>
-              <div className="text-sm text-lode-slate">Encryption</div>
-            </div>
-            <div className="px-6 py-3 bg-white rounded-lode border border-gray-200">
-              <div className="text-3xl font-bold text-lode-orange">99.9%</div>
-              <div className="text-sm text-lode-slate">Uptime SLA</div>
-            </div>
-            <div className="px-6 py-3 bg-white rounded-lode border border-gray-200">
-              <div className="text-3xl font-bold text-lode-orange">24/7</div>
-              <div className="text-sm text-lode-slate">Support</div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://app.go-lode.com/signup"
+              className="px-8 py-4 bg-lode-orange text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-lg hover:shadow-xl text-lg"
+            >
+              Start your free trial today
+
+            </a>
+            <a
+              href="mailto:info@go-lode.com?subject=Demo%20Request"
+              className="px-8 py-4 bg-white text-lode-navy font-semibold rounded-lode hover:bg-gray-100 transition-all text-lg"
+            >
+              Book a live demo
+            </a>
           </div>
         </div>
       </section>
@@ -660,10 +669,14 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-lode-navy mb-4">
-              Get in Touch
+              We're here when you need us
             </h2>
             <p className="text-xl text-lode-slate">
-              Have questions? We're here to help. Reach out to our team.
+              Got a question? Not sure if LODE is right for you?
+            </p>
+            
+            <p className="text-xl text-lode-slate">
+              Whether you're weighing up your options, ready to get started, or just want to see LODE in action, you're in the right place. Let us show you what LODE can do with your own data.
             </p>
           </div>
 
@@ -791,32 +804,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="container mx-auto px-6 py-20">
-        <div className="max-w-4xl mx-auto bg-lode-navy rounded-lode p-12 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your Travel Data?
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Join travel professionals who trust Lode to power their analytics. Start free today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://app.go-lode.com/signup"
-              className="px-8 py-4 bg-lode-orange text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-lg hover:shadow-xl text-lg"
-            >
-              Start 14-Day Free Trial
-            </a>
-            <a
-              href="mailto:info@go-lode.com?subject=Demo%20Request"
-              className="px-8 py-4 bg-white text-lode-navy font-semibold rounded-lode hover:bg-gray-100 transition-all text-lg"
-            >
-              Request a Demo
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="container mx-auto px-6 py-12 border-t border-gray-200">
         <div className="max-w-6xl mx-auto">
@@ -892,7 +879,7 @@ export default function Home() {
               <h4 className="font-bold text-lode-navy mb-4">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-lode-slate hover:text-lode-orange transition-colors">
+                  <a href="/privacy-policy" className="text-lode-slate hover:text-lode-orange transition-colors">
                     Privacy Policy
                   </a>
                 </li>
