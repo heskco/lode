@@ -61,18 +61,58 @@ export default function Home() {
             <span className="text-lode-navy">Stop drowning in spreadsheets.</span> <span className="text-lode-orange">Start making decisions.</span>
           </h1>
 
-          {/* Product Screenshot */}
-          <div className="relative mb-12">
-            <div className="bg-white rounded-lode shadow-2xl border border-gray-200 p-2 overflow-hidden">
-              <img
-                src="/product-dashboard.png"
-                alt="LODE Dashboard - Privacy-First AI-Powered Travel Analytics showing data lakes, AI queries, and file management"
-                className="rounded-lode w-full h-auto"
-              />
+          {/* Product Screenshots - Papers on a table */}
+          <div className="relative mb-12 max-w-5xl mx-auto py-10 px-4">
+            {/* Decorative blurs */}
+            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-lode-orange opacity-10 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -top-6 -left-6 w-48 h-48 bg-lode-navy opacity-10 rounded-full blur-3xl -z-10"></div>
+
+            <div className="flex items-start justify-center">
+              {/* Card 1 - left, tilted left, drops down a bit */}
+              <div
+                className="flex-shrink-0 bg-white rounded-lode shadow-xl border border-gray-200 p-2 overflow-hidden"
+                style={{
+                  width: '38%',
+                  marginRight: '-9.5%',
+                  transform: 'rotate(-5deg) translateY(24px)',
+                  position: 'relative',
+                  zIndex: 2,
+                }}
+              >
+                <img src="/product-dashboard.png" alt="LODE Dashboard" className="rounded-lode w-full h-auto" />
+              </div>
+
+              {/* Card 2 - center, slight tilt, on top */}
+              <div
+                className="flex-shrink-0 bg-white rounded-lode shadow-2xl border border-gray-200 p-2 overflow-hidden"
+                style={{
+                  width: '38%',
+                  transform: 'rotate(1.5deg)',
+                  position: 'relative',
+                  zIndex: 3,
+                }}
+              >
+                <img
+                  src="/query-chart.png"
+                  alt="LODE Dashboard - Privacy-First AI-Powered Travel Analytics showing data lakes, AI queries, and file management"
+                  className="rounded-lode w-full h-auto"
+                />
+              </div>
+
+              {/* Card 3 - right, tilted right, drops down */}
+              <div
+                className="flex-shrink-0 bg-white rounded-lode shadow-xl border border-gray-200 p-2 overflow-hidden"
+                style={{
+                  width: '38%',
+                  marginLeft: '-9.5%',
+                  transform: 'rotate(-3deg) translateY(36px)',
+                  position: 'relative',
+                  zIndex: 1,
+                }}
+              >
+                <img src="/query-table.png" alt="LODE Dashboard" className="rounded-lode w-full h-auto" />
+              </div>
             </div>
-            {/* Decorative elements */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-lode-orange opacity-10 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-lode-navy opacity-10 rounded-full blur-3xl -z-10"></div>
           </div>
 
           <p className="text-xl md:text-2xl text-lode-slate mb-12 leading-relaxed max-w-3xl mx-auto">
