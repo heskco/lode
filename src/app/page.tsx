@@ -54,14 +54,52 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20 md:py-32">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-lode-navy mb-10 leading-tight">
+          <p className="text-xl md:text-2xl text-lode-orange mb-12 leading-relaxed max-w-3xl mx-auto">
             AI-POWERED TRAVEL ANALYTICS
-            <br />
-            <br />
+          </p>
+          <h1 className="text-5xl md:text-7xl font-bold text-lode-orange mb-10 leading-tight">
             <span className="text-lode-navy">Stop drowning in spreadsheets.</span> <span className="text-lode-orange">Start making decisions.</span>
           </h1>
+          
+          <p className="text-xl md:text-2xl text-lode-slate mb-12 leading-relaxed max-w-3xl mx-auto">
+            Every hour you spend building reports is an hour that policy violations go unnoticed and money goes down the drain. LODE turns your scattered travel data into clear, instant answers — so nothing gets missed again.
+          </p>
 
-          {/* Product Screenshots - Papers on a table */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a
+              href="https://app.go-lode.com/signup"
+              className="px-8 py-4 bg-lode-orange text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-md hover:shadow-lg text-lg"
+            >
+              Start 14-day free trial
+            </a>
+            <a
+              href="mailto:info@go-lode.com?subject=Demo%20Request"
+              className="px-8 py-4 bg-lode-navy text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-md hover:shadow-lg text-lg"
+            >
+              Request a demo
+            </a>
+          </div>
+
+          {/* Hero Feature Pills */}
+          <div className="flex flex-wrap justify-center gap-3">
+            <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
+              ✓ Data never leaves your browser
+            </div>
+            <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
+              ✓ Up and running in minutes
+            </div>
+            <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
+              ✓ No technical skills needed
+            </div>
+            <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
+              ✓ Works across all your data sources
+            </div>
+          </div>
+        </div>
+      </section>
+
+       {/* Product Screenshots - Papers on a table */}
+      <section>
           <div className="relative mb-12 max-w-5xl mx-auto py-10 px-4">
             {/* Decorative blurs */}
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-lode-orange opacity-10 rounded-full blur-3xl -z-10"></div>
@@ -114,42 +152,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <p className="text-xl md:text-2xl text-lode-slate mb-12 leading-relaxed max-w-3xl mx-auto">
-            Every hour you spend building reports is an hour that policy violations go unnoticed and money goes down the drain. LODE turns your scattered travel data into clear, instant answers — so nothing gets missed again.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a
-              href="https://app.go-lode.com/signup"
-              className="px-8 py-4 bg-lode-orange text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-md hover:shadow-lg text-lg"
-            >
-              Start 14-Day free trial
-            </a>
-            <a
-              href="mailto:info@go-lode.com?subject=Demo%20Request"
-              className="px-8 py-4 bg-lode-navy text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-md hover:shadow-lg text-lg"
-            >
-              Request a demo
-            </a>
-          </div>
-
-          {/* Hero Feature Pills */}
-          <div className="flex flex-wrap justify-center gap-3">
-            <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
-              ✓ Data never leaves your browser
-            </div>
-            <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
-              ✓ Up and running in minutes
-            </div>
-            <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
-              ✓ No technical skills needed
-            </div>
-            <div className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm text-lode-navy">
-              ✓ Works across all your data sources
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Pain Point Hook Section */}
@@ -225,19 +227,21 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Transition Statement */}
-          <div className="mt-12 text-center">
+      {/* Transition Statement */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="text-center">
             <div className="inline-block p-6 bg-lode-navy rounded-lode">
-              <p className="text-4xl font-semibold text-lode-orange mb-2">
+              <p className="text-4xl font-semibold text-lode-orange mb-4">
                 There's a better way to work.
               </p>
-              <p className="text-white">
+              <p className="text-xl md:text-2xl text-lode-slate leading-relaxed max-w-3xl mx-auto">
                 LODE brings all your data together for enterprise-grade analytics — without the enterprise cost, complexity, or privacy risk.
               </p>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Features Section */}
@@ -345,7 +349,7 @@ export default function Home() {
             <div className="p-8 bg-lode-light-bg rounded-lode border border-gray-100 hover:border-lode-orange transition-all">
               <div className="w-14 h-14 bg-lode-orange rounded-lode flex items-center justify-center mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-lode-navy mb-3">Get your time back</h3>
@@ -358,7 +362,7 @@ export default function Home() {
             <div className="p-8 bg-lode-light-bg rounded-lode border border-gray-100 hover:border-lode-orange transition-all">
               <div className="w-14 h-14 bg-lode-orange rounded-lode flex items-center justify-center mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-lode-navy mb-3">Uncover hidden savings</h3>
@@ -371,12 +375,12 @@ export default function Home() {
             <div className="p-8 bg-lode-light-bg rounded-lode border border-gray-100 hover:border-lode-orange transition-all">
               <div className="w-14 h-14 bg-lode-orange rounded-lode flex items-center justify-center mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-lode-navy mb-3">Sleep soundly on compliance</h3>
+              <h3 className="text-xl font-bold text-lode-navy mb-3">Stay ahead of policy breaches</h3>
               <p className="text-lode-slate leading-relaxed">
-                All processing happens in your browser. Employee personally identifiable information (PII), passport numbers, corporate card data — none of it ever leaves your device.
+                Spot non-compliant bookings before they become a pattern, and keep your travel programme on track without chasing down receipts or waiting for month-end to find out what happened.
               </p>
             </div>
 
@@ -384,7 +388,7 @@ export default function Home() {
             <div className="p-8 bg-lode-light-bg rounded-lode border border-gray-100 hover:border-lode-orange transition-all">
               <div className="w-14 h-14 bg-lode-orange rounded-lode flex items-center justify-center mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-lode-navy mb-3">Report on ESG with confidence</h3>
@@ -397,12 +401,25 @@ export default function Home() {
             <div className="p-8 bg-lode-light-bg rounded-lode border border-gray-100 hover:border-lode-orange transition-all">
               <div className="w-14 h-14 bg-lode-orange rounded-lode flex items-center justify-center mb-4">
                 <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-lode-navy mb-3">Walk into every meeting prepared</h3>
               <p className="text-lode-slate leading-relaxed">
                 Answer ad hoc questions in minutes, not days. Back your recommendations with data, and build the kind of credibility that gets you a seat at the table.
+              </p>
+            </div>
+
+            {/* Feature 6 */}
+            <div className="p-8 bg-lode-light-bg rounded-lode border border-gray-100 hover:border-lode-orange transition-all">
+              <div className="w-14 h-14 bg-lode-orange rounded-lode flex items-center justify-center mb-4">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-lode-navy mb-3">Sleep soundly on compliance</h3>
+              <p className="text-lode-slate leading-relaxed">
+                All processing happens in your browser. Employee personally identifiable information (PII), passport numbers, corporate card data — none of it ever leaves your device.
               </p>
             </div>
           </div>
@@ -419,6 +436,47 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
+            {/* Corporate Travel Managers */}
+            <div className="bg-white p-8 rounded-lode shadow-md border-2 border-transparent hover:border-lode-orange transition-all">
+              <div className="w-16 h-16 bg-lode-navy rounded-lode flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-lode-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-lode-navy mb-4">
+                Corporate travel managers
+              </h3>
+              <p className="text-lode-slate mb-6">
+                Take control of your travel programme with deep insights into policy, costs, and traveller behaviour.
+              </p>
+              <ul className="space-y-3 text-lode-navy">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Policy compliance monitoring and alerts</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Cost centre and department-level analytics</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Traveller behaviour insights and patterns</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Budget tracking and forecasting tools</span>
+                </li>
+              </ul>
+            </div>
+
             {/* TMCs */}
             <div className="bg-white p-8 rounded-lode shadow-md border-2 border-transparent hover:border-lode-orange transition-all">
               <div className="w-16 h-16 bg-lode-navy rounded-lode flex items-center justify-center mb-6">
@@ -500,47 +558,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-
-            {/* Corporate Travel Managers */}
-            <div className="bg-white p-8 rounded-lode shadow-md border-2 border-transparent hover:border-lode-orange transition-all">
-              <div className="w-16 h-16 bg-lode-navy rounded-lode flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-lode-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-lode-navy mb-4">
-                Corporate travel managers
-              </h3>
-              <p className="text-lode-slate mb-6">
-                Take control of your travel programme with deep insights into policy, costs, and traveller behaviour.
-              </p>
-              <ul className="space-y-3 text-lode-navy">
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Policy compliance monitoring and alerts</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Cost centre and department-level analytics</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Traveller behaviour insights and patterns</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Budget tracking and forecasting tools</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
@@ -564,9 +581,8 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-lode-navy mb-2">Free Trial</h3>
                 <div className="text-4xl font-bold text-lode-navy mb-2">
                   14 Days
-                  <span className="text-lg font-normal text-lode-slate block mt-1">No credit card required</span>
                 </div>
-                <p className="text-lode-slate">Perfect for exploring travel analytics</p>
+                <p className="text-lode-slate">Explore LODE with your own data. No credit card required</p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start text-lode-navy">
@@ -579,13 +595,13 @@ export default function Home() {
                   <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Unlimited queries</span>
+                  <span>Unlimited AI-powered queries</span>
                 </li>
                 <li className="flex items-start text-lode-navy">
                   <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>AI-powered natural language queries</span>
+                  <span>Ask questions in natural language</span>
                 </li>
                 <li className="flex items-start text-lode-navy">
                   <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -610,7 +626,7 @@ export default function Home() {
                 href="https://app.go-lode.com/signup"
                 className="block w-full px-6 py-3 text-center bg-lode-navy text-white font-semibold rounded-lode hover:bg-opacity-90 transition-all"
               >
-                Start 14-Day Free Trial
+                Start your free trial today
               </a>
             </div>
 
@@ -678,13 +694,12 @@ export default function Home() {
             {/* TMC/Reseller Tier */}
             <div className="bg-lode-light-bg p-8 rounded-lode border-2 border-gray-200 hover:border-lode-orange transition-all">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-lode-navy mb-2">TMC / Reseller</h3>
+                <h3 className="text-2xl font-bold text-lode-navy mb-2">TMC/Reseller</h3>
                 <div className="text-4xl font-bold text-lode-navy mb-2">
                   €1,500
                   <span className="text-lg font-normal text-lode-slate">/month</span>
                 </div>
-                <p className="text-lode-slate text-sm mb-1">+ €300/month per client</p>
-                <p className="text-lode-slate">For travel management companies</p>
+                <p className="text-lode-slate">For TMCs wanting to offer analytics as a value-added service</p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start text-lode-navy">
@@ -709,12 +724,6 @@ export default function Home() {
                   <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Dedicated account manager</span>
-                </li>
-                <li className="flex items-start text-lode-navy">
-                  <svg className="w-5 h-5 text-lode-orange mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
                   <span>Advanced integrations</span>
                 </li>
               </ul>
@@ -722,7 +731,7 @@ export default function Home() {
                 href="mailto:info@go-lode.com?subject=TMC%20Inquiry"
                 className="block w-full px-6 py-3 text-center bg-lode-navy text-white font-semibold rounded-lode hover:bg-opacity-90 transition-all"
               >
-                Contact Sales
+                Contact sales
               </a>
             </div>
           </div>
@@ -746,7 +755,7 @@ export default function Home() {
       {/* Final CTA Section */}
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto bg-lode-navy rounded-lode p-12 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-4xl font-bold text-lode-orange mb-6">
             Your first insight is only one LODE away...
           </h2>
           <p className="text-xl text-gray-300 mb-8">
@@ -755,14 +764,14 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://app.go-lode.com/signup"
-              className="px-8 py-4 bg-lode-orange text-white font-semibold rounded-lode hover:bg-orange-600 transition-all shadow-lg hover:shadow-xl text-lg"
+              className="px-8 py-4 bg-lode-orange text-white font-semibold rounded-lode hover:bg-lode-navy-600 transition-all shadow-lg hover:shadow-xl text-lg"
             >
               Start your free trial today
 
             </a>
             <a
               href="mailto:info@go-lode.com?subject=Demo%20Request"
-              className="px-8 py-4 bg-white text-lode-navy font-semibold rounded-lode hover:bg-gray-100 transition-all text-lg"
+              className="px-8 py-4 bg-lode-slate text-white font-semibold rounded-lode hover:bg-lode-slate-100 transition-all text-lg"
             >
               Book a live demo
             </a>
@@ -793,7 +802,7 @@ export default function Home() {
 
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-lode-orange rounded-lode flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-lode-navy rounded-lode flex items-center justify-center mr-4 flex-shrink-0">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
@@ -807,7 +816,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-lode-orange rounded-lode flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-lode-navy rounded-lode flex items-center justify-center mr-4 flex-shrink-0">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -820,7 +829,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-lode-orange rounded-lode flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-lode-navy rounded-lode flex items-center justify-center mr-4 flex-shrink-0">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
