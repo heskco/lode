@@ -245,7 +245,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-6 py-20 bg-white">
+      <section id="features" className="container mx-auto px-6 py-20 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-lode-navy mb-4">
@@ -563,7 +563,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="container mx-auto px-6 py-20 bg-white">
+      <section id="pricing" className="container mx-auto px-6 py-20 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-lode-navy mb-4">
@@ -966,17 +966,17 @@ export default function Home() {
               <h4 className="font-bold text-lode-navy mb-4">Product</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-lode-slate hover:text-lode-orange transition-colors">
+                  <a href="#features" className="text-lode-slate hover:text-lode-orange transition-colors">
                     Features
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-lode-slate hover:text-lode-orange transition-colors">
+                  <a href="#pricing" className="text-lode-slate hover:text-lode-orange transition-colors">
                     Pricing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-lode-slate hover:text-lode-orange transition-colors">
+                  <a href="/security" className="text-lode-slate hover:text-lode-orange transition-colors">
                     Security
                   </a>
                 </li>
@@ -1015,12 +1015,12 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-lode-slate hover:text-lode-orange transition-colors">
+                  <a href="/terms" className="text-lode-slate hover:text-lode-orange transition-colors">
                     Terms of Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-lode-slate hover:text-lode-orange transition-colors">
+                  <a href="/gdpr" className="text-lode-slate hover:text-lode-orange transition-colors">
                     GDPR
                   </a>
                 </li>
