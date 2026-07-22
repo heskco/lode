@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LODE Subscriber Agreement</title>
+<style>
+  :root {
+    --lode-navy: #0B1F3B;
+    --lode-orange: #FF6A00;
+    --lode-slate: #94A3B8;
+    --lode-light-bg: #F5F7FA;
+    --border: #E5E7EB;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--lode-light-bg);
+    color: var(--lode-navy);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 56px 64px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  header.doc-header {
+    border-bottom: 3px solid var(--lode-orange);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .brand {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--lode-navy);
+  }
+  .brand .accent { color: var(--lode-orange); }
+
+  .doc-meta {
+    text-align: right;
+    font-size: 13px;
+    color: var(--lode-slate);
+  }
+  .doc-meta strong { color: var(--lode-navy); display: block; }
+
+  h1.doc-title {
+    font-size: 32px;
+    margin: 8px 0 4px;
+    color: var(--lode-navy);
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  .doc-subtitle {
+    text-align: center;
+    color: var(--lode-slate);
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .parties-box {
+    background: var(--lode-light-bg);
+    border-left: 4px solid var(--lode-orange);
+    padding: 20px 24px;
+    margin: 24px 0 32px;
+    border-radius: 4px;
+  }
+  .parties-box p { margin: 0 0 8px; }
+  .parties-box p:last-child { margin-bottom: 0; }
+  .party-label {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--lode-orange);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-right: 6px;
+  }
+
+  h2.section-title {
+    font-size: 18px;
+    color: var(--lode-navy);
+    margin: 36px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  h2 .num {
+    display: inline-block;
+    background: var(--lode-orange);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 2px 10px;
+    min-width: 28px;
+    text-align: center;
+  }
+
+  h3.sub-title {
+    font-size: 15px;
+    color: var(--lode-navy);
+    margin: 18px 0 6px;
+    font-weight: 700;
+  }
+
+  p { margin: 8px 0; }
+
+  ul, ol { padding-left: 22px; margin: 8px 0; }
+  li { margin: 4px 0; }
+
+  a { color: var(--lode-orange); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .definitions dt {
+    font-weight: 700;
+    color: var(--lode-navy);
+    margin-top: 10px;
+  }
+  .definitions dd {
+    margin: 2px 0 0 0;
+    color: #374151;
+  }
+
+  .mode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 14px 0;
+  }
+  .mode-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    background: #fff;
+  }
+  .mode-card h4 {
+    margin: 0 0 4px;
+    color: var(--lode-orange);
+    font-size: 14px;
+  }
+  .mode-card p { margin: 0; font-size: 14px; color: #374151; }
+
+  .prohibited-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 14px 0;
+  }
+  .prohibited-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .prohibited-card strong { color: var(--lode-navy); display: block; margin-bottom: 4px; font-size: 14px; }
+  .prohibited-card span { font-size: 13px; color: #4B5563; }
+
+  .billing-block {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 10px 0;
+  }
+  .billing-block h4 { margin: 0 0 4px; color: var(--lode-navy); font-size: 14px; }
+  .billing-block p { margin: 0; font-size: 14px; color: #374151; }
+
+  .contact-box {
+    background: var(--lode-navy);
+    color: #fff;
+    padding: 20px 24px;
+    border-radius: 6px;
+    margin-top: 12px;
+  }
+  .contact-box .label {
+    color: var(--lode-orange);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .contact-box a { color: var(--lode-orange); }
+
+  .signature-section {
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 2px solid var(--lode-navy);
+  }
+  .signature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-top: 24px;
+  }
+  .sig-block { font-size: 14px; }
+  .sig-block h4 {
+    margin: 0 0 16px;
+    color: var(--lode-orange);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  .sig-line {
+    border-bottom: 1px solid var(--lode-navy);
+    height: 32px;
+    margin-bottom: 4px;
+  }
+  .sig-label {
+    font-size: 11px;
+    color: var(--lode-slate);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  footer.doc-footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--lode-slate);
+    text-align: center;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { box-shadow: none; padding: 32px; max-width: 100%; }
+    h2.section-title { page-break-after: avoid; }
+    .billing-block, .mode-card, .prohibited-card { page-break-inside: avoid; }
+    .signature-section { page-break-before: avoid; }
+  }
+
+  @media (max-width: 720px) {
+    .page { padding: 32px 24px; }
+    .mode-grid, .prohibited-grid, .signature-grid { grid-template-columns: 1fr; }
+    header.doc-header { flex-direction: column; align-items: flex-start; }
+    .doc-meta { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="doc-header">
+    <div class="brand">LO<span class="accent">DE</span></div>
+    <div class="doc-meta">
+      <strong>Subscriber Agreement</strong>
+      <span>Version 1.0 &middot; Last updated: April 2026</span>
+    </div>
+  </header>
+
+  <h1 class="doc-title">Subscriber Agreement</h1>
+  <p class="doc-subtitle">Governing access to and use of the LODE travel data analytics platform</p>
+
+  <div class="parties-box">
+    <p><span class="party-label">Provider</span> LODE ("LODE", "we", "us", "our")</p>
+    <p><span class="party-label">Subscriber</span> The individual or organisation identified in the signature block below ("Subscriber", "you", "your")</p>
+    <p><span class="party-label">Effective Date</span> The date this Agreement is countersigned by both parties, or the date the Subscriber first creates an account on the Service, whichever is earlier.</p>
+  </div>
+
+  <p>
+    This Subscriber Agreement (the "Agreement") forms a binding legal contract between LODE and the Subscriber and governs the Subscriber's access to and use of the LODE travel data analytics platform, including the website at
+    <a href="https://go-lode.com">go-lode.com</a> and the application at
+    <a href="https://app.go-lode.com">app.go-lode.com</a> (together, the "Service").
+    If the Subscriber is entering into this Agreement on behalf of an organisation, the signatory warrants that they have authority to bind that organisation.
+  </p>
+
+  <h2 class="section-title"><span class="num">1</span> Definitions</h2>
+  <dl class="definitions">
+    <dt>Service</dt>
+    <dd>The LODE travel data analytics platform, including the website, the application, and all associated features, content, and supporting infrastructure.</dd>
+
+    <dt>Local Lake</dt>
+    <dd>A workspace in which Subscriber Data is stored and processed entirely within the Subscriber's browser. No Subscriber Data in a Local Lake is transmitted to LODE servers.</dd>
+
+    <dt>Cloud Lake</dt>
+    <dd>A workspace in which Subscriber Data is stored in LODE's encrypted cloud storage and made accessible to authorised members of the Subscriber's organisation.</dd>
+
+    <dt>Subscriber Data</dt>
+    <dd>All data, files, content, and information that the Subscriber or its authorised users upload to or process through the Service.</dd>
+
+    <dt>Subscription</dt>
+    <dd>A paid plan that provides access to designated features of the Service for a defined billing period.</dd>
+
+    <dt>Authorised User</dt>
+    <dd>Any individual the Subscriber permits to access the Service through the Subscriber's account or organisation.</dd>
+  </dl>
+
+  <h2 class="section-title"><span class="num">2</span> The Service</h2>
+  <p>LODE provides a travel data analytics platform that allows the Subscriber to upload, query, and analyse travel and expense data. The Service operates in two modes:</p>
+  <div class="mode-grid">
+    <div class="mode-card">
+      <h4>Local Lakes</h4>
+      <p>Subscriber Data is stored and processed entirely within the Subscriber's browser. Nothing is uploaded to LODE servers.</p>
+    </div>
+    <div class="mode-card">
+      <h4>Cloud Lakes</h4>
+      <p>Subscriber Data is stored in encrypted cloud storage and accessible to Authorised Users within the Subscriber's organisation.</p>
+    </div>
+  </div>
+  <p>LODE reserves the right to modify, suspend, or discontinue any part of the Service at any time. Where reasonably practicable, LODE will give advance notice of material changes.</p>
+
+  <h2 class="section-title"><span class="num">3</span> Accounts and Registration</h2>
+  <p>To access the full Service, the Subscriber must register for an account. The Subscriber agrees to:</p>
+  <ul>
+    <li>Provide accurate, complete, and up-to-date registration information.</li>
+    <li>Keep login credentials confidential and not share them with others.</li>
+    <li>Notify LODE immediately at <a href="mailto:info@go-lode.com">info@go-lode.com</a> upon any suspected unauthorised access to the account.</li>
+    <li>Accept responsibility for all activity that occurs under the account, whether by the Subscriber or Authorised Users.</li>
+  </ul>
+  <p>LODE reserves the right to suspend or terminate accounts that violate this Agreement or that have been inactive for an extended period, with reasonable notice where possible.</p>
+
+  <h2 class="section-title"><span class="num">4</span> Acceptable Use</h2>
+  <p>The Subscriber may use the Service only for lawful purposes and in accordance with this Agreement. The Subscriber and its Authorised Users must not:</p>
+  <div class="prohibited-grid">
+    <div class="prohibited-card"><strong>Upload unlawful content</strong><span>Upload data the Subscriber does not have the right to process, or that would breach any applicable law or third-party rights.</span></div>
+    <div class="prohibited-card"><strong>Circumvent security</strong><span>Probe, scan, or test the vulnerability of the Service, or bypass any authentication or access controls.</span></div>
+    <div class="prohibited-card"><strong>Interfere with the Service</strong><span>Use automated tools to scrape, overload, or disrupt the Service in a way that affects other users.</span></div>
+    <div class="prohibited-card"><strong>Misrepresent identity</strong><span>Impersonate any person or organisation, or misrepresent affiliation with any entity.</span></div>
+    <div class="prohibited-card"><strong>Resell without permission</strong><span>Resell, sublicense, or otherwise provide access to the Service to third parties without LODE's prior written consent.</span></div>
+    <div class="prohibited-card"><strong>Use for unlawful purposes</strong><span>Use the Service in connection with fraud, money laundering, or any other illegal activity.</span></div>
+  </div>
+  <p>LODE reserves the right to investigate suspected violations and to suspend or terminate access if it reasonably believes a breach has occurred.</p>
+
+  <h2 class="section-title"><span class="num">5</span> Subscriptions, Fees, and Billing</h2>
+  <p>Access to paid features of the Service requires an active Subscription. The following terms apply to all paid plans.</p>
+
+  <div class="billing-block">
+    <h4>Free Trial</h4>
+    <p>New accounts receive a 14-day free trial. No credit card is required to start. At the end of the trial, access to paid features will be restricted unless the Subscriber subscribes to a paid plan.</p>
+  </div>
+
+  <div class="billing-block">
+    <h4>Billing</h4>
+    <p>Subscriptions are billed monthly in advance. Payments are processed by LODE's payment provider, Stripe. By subscribing, the Subscriber authorises LODE to charge the designated payment method on a recurring basis until cancellation.</p>
+  </div>
+
+  <div class="billing-block">
+    <h4>Cancellation</h4>
+    <p>The Subscriber may cancel its Subscription at any time from account settings. Cancellation takes effect at the end of the current billing period. LODE does not offer refunds for unused time within a billing period, except where required by law.</p>
+  </div>
+
+  <div class="billing-block">
+    <h4>Price Changes</h4>
+    <p>LODE may change Subscription prices from time to time. LODE will give at least 30 days' notice of any price increase. Continued use of the Service after the effective date constitutes acceptance of the new price.</p>
+  </div>
+
+  <div class="billing-block">
+    <h4>Taxes</h4>
+    <p>All fees are exclusive of applicable taxes. The Subscriber is responsible for any sales, use, VAT, or similar taxes arising from the Subscription, other than taxes based on LODE's net income.</p>
+  </div>
+
+  <h2 class="section-title"><span class="num">6</span> Subscriber Data</h2>
+  <p>The Subscriber retains full ownership of all Subscriber Data. By uploading Subscriber Data, the Subscriber grants LODE a limited, non-exclusive licence to process that data solely for the purpose of providing the Service.</p>
+  <p>The Subscriber is responsible for ensuring it has the right to upload and process any Subscriber Data, including any personal data about employees or travellers. The Subscriber must have a valid lawful basis under applicable data protection law before uploading personal data to a Cloud Lake.</p>
+  <p>On account closure, Subscriber Data held in Cloud Lakes will be deleted within 30 days of the Subscriber's written request. Local Lake data exists only in the Subscriber's browser and is entirely under the Subscriber's control.</p>
+  <p>Full details of LODE's data handling practices are set out in the LODE <a href="https://go-lode.com/privacy-policy">Privacy Policy</a> and <a href="https://go-lode.com/gdpr">GDPR page</a>, each of which is incorporated into this Agreement by reference.</p>
+
+  <h2 class="section-title"><span class="num">7</span> Intellectual Property</h2>
+  <p>All software, design, trademarks, and content that comprise the LODE platform are owned by or licensed to LODE. This Agreement does not transfer any intellectual property rights to the Subscriber.</p>
+  <p>The Subscriber is granted a limited, non-exclusive, non-transferable licence to access and use the Service for its own internal business purposes during the term of its Subscription.</p>
+  <p>The Subscriber retains all intellectual property rights in Subscriber Data. LODE claims no ownership over Subscriber Data.</p>
+
+  <h2 class="section-title"><span class="num">8</span> Disclaimers</h2>
+  <p>The Service is provided "as is" and "as available". To the extent permitted by law, LODE makes no warranties — express or implied — regarding the Service, including warranties of merchantability, fitness for a particular purpose, or uninterrupted availability.</p>
+  <p>AI-generated query suggestions and data summaries are provided for convenience only. The Subscriber is responsible for reviewing and validating any output before making business decisions based on it. LODE does not guarantee the accuracy, completeness, or suitability of AI-generated content.</p>
+  <p>LODE does not warrant that the Service will be free from errors, viruses, or other harmful components, though LODE takes reasonable steps to ensure the Service is secure.</p>
+
+  <h2 class="section-title"><span class="num">9</span> Limitation of Liability</h2>
+  <p>To the fullest extent permitted by law, LODE shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the Subscriber's use of — or inability to use — the Service.</p>
+  <p>LODE's total aggregate liability to the Subscriber for any claim arising under or in connection with this Agreement shall not exceed the total fees paid by the Subscriber to LODE in the 12 months preceding the event giving rise to the claim.</p>
+  <p>Nothing in this Agreement limits LODE's liability for death or personal injury caused by negligence, fraud, or any other liability that cannot be excluded or limited under applicable law.</p>
+
+  <h2 class="section-title"><span class="num">10</span> Third-Party Services</h2>
+  <p>The Service integrates with third-party providers including AWS, Vercel, Stripe, and an AI provider. The Subscriber's use of those services is subject to their own terms and policies. LODE is not responsible for the practices or content of third-party services.</p>
+  <p>Links to third-party websites on the platform do not constitute an endorsement of those sites or their content.</p>
+
+  <h2 class="section-title"><span class="num">11</span> Term and Termination</h2>
+  <p>This Agreement commences on the Effective Date and continues until terminated in accordance with this Section.</p>
+  <p>Either party may terminate this Agreement at any time. The Subscriber may do so by cancelling its Subscription and closing its account. LODE may do so by giving the Subscriber reasonable notice, or immediately if the Subscriber materially breaches this Agreement.</p>
+  <p>On termination, the Subscriber's right to access the Service will cease. Sections relating to intellectual property, disclaimers, limitation of liability, and governing law will survive termination.</p>
+
+  <h2 class="section-title"><span class="num">12</span> Changes to this Agreement</h2>
+  <p>LODE may update this Agreement from time to time. When LODE makes material changes, it will notify the Subscriber by email and update the "Last updated" date at the top of this document. Continued use of the Service after the effective date of the revised Agreement constitutes acceptance of the changes.</p>
+  <p>If the Subscriber does not agree to the updated Agreement, it should stop using the Service and cancel its Subscription.</p>
+
+  <h2 class="section-title"><span class="num">13</span> Governing Law and Disputes</h2>
+  <p>This Agreement is governed by the laws of England and Wales. Any disputes arising from or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+  <p>Before pursuing formal legal action, the Subscriber is encouraged to contact LODE at <a href="mailto:info@go-lode.com">info@go-lode.com</a> so that the matter may be resolved directly.</p>
+
+  <h2 class="section-title"><span class="num">14</span> General Provisions</h2>
+  <h3 class="sub-title">Entire Agreement</h3>
+  <p>This Agreement, together with any documents incorporated by reference, constitutes the entire agreement between the parties with respect to the Service and supersedes all prior agreements, proposals, or representations.</p>
+  <h3 class="sub-title">Severability</h3>
+  <p>If any provision of this Agreement is held to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+  <h3 class="sub-title">Assignment</h3>
+  <p>The Subscriber may not assign or transfer this Agreement without LODE's prior written consent. LODE may assign this Agreement in connection with a merger, acquisition, or sale of assets.</p>
+  <h3 class="sub-title">No Waiver</h3>
+  <p>A failure to enforce any right or provision of this Agreement is not a waiver of that right or provision.</p>
+  <h3 class="sub-title">Notices</h3>
+  <p>Notices to LODE must be sent to <a href="mailto:info@go-lode.com">info@go-lode.com</a>. Notices to the Subscriber may be sent to the email address associated with the Subscriber's account.</p>
+
+  <h2 class="section-title"><span class="num">15</span> Contact</h2>
+  <p>For any questions about this Agreement, please contact LODE at the address below.</p>
+  <div class="contact-box">
+    <div class="label">LODE</div>
+    <p style="margin: 8px 0 0;">Email: <a href="mailto:info@go-lode.com">info@go-lode.com</a></p>
+    <p style="margin: 4px 0 0;">Web: <a href="https://go-lode.com" style="color:#fff;">go-lode.com</a></p>
+  </div>
+
+  <div class="signature-section">
+    <h2 class="section-title" style="margin-top:0;"><span class="num">&#10003;</span> Acceptance and Signatures</h2>
+    <p>By signing below, or by creating an account and using the Service, each party agrees to be bound by this Agreement as of the Effective Date.</p>
+
+    <div class="signature-grid">
+      <div class="sig-block">
+        <h4>For the Subscriber</h4>
+        <div class="sig-line"></div>
+        <div class="sig-label">Signature</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Printed Name</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Title</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Organisation</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Date</div>
+      </div>
+
+      <div class="sig-block">
+        <h4>For LODE</h4>
+        <div class="sig-line"></div>
+        <div class="sig-label">Signature</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Printed Name</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Title</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Organisation</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Date</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="doc-footer">
+    &copy; 2026 LODE. All rights reserved. &middot; Subscriber Agreement v1.0
+  </footer>
+
+</div>
+</body>
+</html>

@@ -426,6 +426,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* The company dime banner Statement */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="text-center">
+            <div className="inline-block p-6 bg-lode-navy rounded-lode">
+              <div className="mb-6">
+                <img
+                  src="/company_dime.png"
+                  alt="The Company Dime"
+                  className="h-24 mx-auto object-contain"
+                />
+              </div>
+              <p className="text-4xl font-semibold text-lode-orange mb-4">
+                Featured in The Company Dime
+              </p>
+              <p className="text-xl md:text-2xl text-lode-slate leading-relaxed max-w-3xl mx-auto mb-6">
+                Check out the full write-up with veteran travel journalist Jay Campbell
+              </p>
+              <a
+                href="https://www.thecompanydime.com/lode/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-lode-orange text-white font-semibold rounded-lode hover:bg-orange-600 transition-all"
+              >
+                Read the article
+              </a>
+            </div>
+          </div>
+      </section>
+
       {/* Solutions by Client Type */}
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-6xl mx-auto">
